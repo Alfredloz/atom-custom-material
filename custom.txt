@@ -1,0 +1,70 @@
+Ciao ragazzi!
+Vi lascio la mia umilissima modifica dei colori ed alcuni piccoli effetti di atom. Per usarli dovete fare i seguenti passi:
+
+1) Aprite Atom ed andate su SETTINGS
+
+2)In fondo a settings c'è l'opzione "open Config Folder"
+
+3) Vi comparirà un'altra finestra di Atom dove alla sua sinistra ci sarà il progetto .atom ( come nella cartella progetto su cui lavoriamo) ed in fondo ci sarà il file "stylesheet.less".
+
+4) Prima di farlo vi dico che anche Atom possiede un INSPECTOR!! perciò basta aprirlo (su mac è cmd+opt+i penso che su windows sarà ctrl+alt+i).
+
+5) Aprite il file ed inserite le seguenti righe di codice CSS dopo gli esempi che vi danno:
+
+buon divertimento!!
+
+ps: io uso material ui come tema ui, secondo me stanno bene i colori così, scegliete i vostri nel caso i miei non vi piacciano!
+
+
+// // WARNING: ROBA aggiunta
+// text comment
+atom-text-editor .syntax--comment {
+  color: rgb(151, 145, 166);
+}
+// hoover folders and stuff
+.icon-file-directory:hover {
+  cursor: pointer;
+}
+.list-item:hover::before {
+  cursor: pointer;
+}
+.icon-file-directory.name.icon:hover::before {
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
+}
+.tree-view span.icon-file-directory.name.icon:hover {
+  color: rgb(166, 158, 51);
+  font-size: 0.8rem;
+}
+// folder color and settings
+.tree-view span.icon-file-directory.name.icon {
+  transition: 0.1s ease-in-out;
+}
+.icon-file-directory.name.icon::before {
+  color: rgb(67, 161, 185);
+  transition: 0.1s ease-in-out;
+}
+.html5-icon.name.icon::before {
+  color: rgb(224, 111, 38);
+}
+.css3-icon.name.icon::before {
+  color: rgb(39, 123, 222);
+}
+.js-icon.name.icon::before {
+  color: rgb(224, 193, 59);
+}
+.git-icon.name.icon::before {
+  color: rgb(155, 119, 242);
+}
+.image-icon.name.icon::before {
+  color: rgb(152, 132, 90);
+}
+.svg-icon.name.icon::before {
+  color: rgb(193, 110, 112);
+}
+.finder-icon.name.icon::before {
+  color: rgb(61, 211, 215);
+}
+.book-icon.name.icon::before {
+  color: rgb(223, 138, 77);
+}
